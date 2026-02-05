@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<!-- MI School Website Template
-Created by hamz1080p
-GitHub: https://github.com/hamz1080p
-Repository: https://github.com/Miawwh/smk-school-website-template
-
-This is a free, static HTML/CSS template built with Bootstrap 5 for school websites.
-You may customize content, images, and styles as you wish.
-No special license is required, but attribution is appreciated.
-Thank you for using this template!
--->
 <html lang="id">
   <head>
     <!-- REQUIRED META TAGS -->
@@ -87,8 +77,42 @@ Thank you for using this template!
     <link rel="stylesheet" href="assets/css/navbar.css">
     <!-- Footer CSS Custome -->
     <link rel="stylesheet" href="assets/css/footer.css">
-    <!-- CSS Custome Page Home/Index -->
+        <!-- CSS Custome Page Home/Index -->
     <link rel="stylesheet" href="assets/css/home.css">
+        <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Konfigurasi Tema Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#008080', // Emerald Green sesuai request
+                            light: '#ccfbf1',
+                        },
+                        darkBlue: {
+                            DEFAULT: '#1a202c', // Dark Blue sesuai request
+                            hover: '#2d3748',
+                        },
+                        gold: {
+                            DEFAULT: '#FBBF24', // Kuning Emas untuk label
+                        }
+                    }
+                }
+            }
+        }
+    </script>
   </head>
 
   <body>
@@ -103,7 +127,7 @@ Thank you for using this template!
     <nav data-sal="slide-down" data-sal-duration="900" class="navbar navbar-expand-lg fixed-top shadow-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img class="img" src="assets/img/MISABILIRRIDLO.png" alt="Logo Sekolah" width="auto" height="55">
+            <img class="img" src="https://misabilirridlo.sch.id/assets/img/logoku.jpg" alt="Logo Sekolah" width="auto" height="55">
           </a>
         <button
           class="navbar-toggler pe-0"
@@ -141,7 +165,7 @@ Thank you for using this template!
 
               <li class="nav-item dropdown link-nav">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Program Unggulan
+                  Program Keahlian
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item link-nav-dropdown" href="#">Tahfidz</a></li>
@@ -150,7 +174,7 @@ Thank you for using this template!
               </li>
               
               <li class="nav-item">
-                <a class="nav-link link-nav mx-lg-2" href="berita-kegiatan.html"></a>
+                <a class="nav-link link-nav mx-lg-2" href="https://about.misabilirridlo.sch.id">Tentang Kami</a>
               </li>
           </div>
         </div>
@@ -164,7 +188,7 @@ Thank you for using this template!
       <section class="hero-section">
         <div data-sal="slide-up" data-sal-duration="900" class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column d-sm text-center ">
           <h1 class="display-3 fw-bold">MI SABILIRRIDLO</h1>
-          <h2 class="d-sm fs-4"><em>Sarirejo - Jombang</em></h2>
+          <h2 class="d-sm fs-4"><em>sarirejo</em></h2>
           <a href="#Temukan" class="btn btn-outline-light fw-bold m-3 text-capitalize">Selengkapnya <i class="bi bi-arrow-down"></i> </a>
         </div>
       </section>
@@ -210,6 +234,151 @@ Thank you for using this template!
       </div>
      </section>
      <!-- End Section -->
+
+<!-- SECTION WHY CHOOSE US -->
+    <!-- HERO SECTION (Sambutan Kepala Madrasah) -->
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- KOLOM KIRI: FOTO KEPALA MADRASAH -->
+                <div class="relative order-2 lg:order-1 flex justify-center lg:justify-start">
+                    <!-- Elemen dekoratif background -->
+                    <div class="absolute top-4 left-4 w-full h-full border-2 border-brand/10 rounded-2xl transform translate-x-3 translate-y-3 -z-10 hidden lg:block"></div>
+                    
+                    <!-- Bingkai Foto Rapi -->
+                    <div class="relative w-full max-w-md rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <!-- Placeholder sesuai request -->
+                        <img src="https://kemenag-pendis-bucket-production1.oss-ap-southeast-5.aliyuncs.com/images/personnels/phpsAhkZq_1739503397.jpg" 
+                             alt="Foto Kepala Madrasah" 
+                             class="w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN: KATA-KATA -->
+                <div class="order-1 lg:order-2 text-center lg:text-left">
+                    <!-- Label Kuning Emas -->
+                    <span class="inline-block py-1 px-3 rounded bg-gold/10 text-gold text-xs font-bold uppercase tracking-widest mb-4 border border-gold/20">
+                        Kepala Madrasah
+                    </span>
+
+                    <!-- Nama Besar -->
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-darkBlue mb-6 leading-tight">
+                        AZIZ ASYHAR, S.TH.I
+                    </h1>
+
+                    <!-- Teks Sambutan -->
+                    <div class="prose prose-lg text-slate-600 mb-8">
+                        <p class="leading-relaxed">
+                            "Dinamika perkembangan zaman melaju sangat cepat. Di tengah arus perubahan ini, MIS SABILIRRIDLO berkomitmen untuk tidak hanya sekadar menyelenggarakan pendidikan, namun juga menjadi pusat pembentukan karakter.
+                        </p>
+                        <p class="leading-relaxed mt-4">
+                            Kami mengintegrasikan nilai-nilai keislaman dengan kemajuan teknologi untuk mempersiapkan generasi muda yang tidak hanya cerdas secara intelektual, tetapi juga memiliki kedalaman spiritual dan akhlak mulia."
+                        </p>
+                    </div>
+
+                    <!-- Tombol Selengkapnya (Dark Blue) -->
+                    <a href="#" class="inline-flex items-center gap-2 bg-darkBlue hover:bg-darkBlue-hover text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        SELENGKAPNYA
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION LAYANAN DIGITAL (Style belajar.id) -->
+    <section class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Judul Section -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-darkBlue mb-4">Manfaatkan Akses Layanan Pendidikan</h2>
+                <div class="w-20 h-1 bg-brand mx-auto rounded-full"></div>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
+                    Ekosistem digital terintegrasi untuk mendukung kegiatan belajar mengajar yang lebih efektif dan kreatif.
+                </p>
+            </div>
+
+            <!-- Grid Kartu Layanan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+               <!-- Kartu 1: Google Workspace (Gambar) -->
+                <a href="https://edu.google.com" class="group bg-white rounded-xl shadow-sm border border-slate-100 p-6 relative flex flex-col justify-between h-64 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                     <div>
+                        <!-- Area Logo: Ganti src dengan link gambar Google Anda -->
+                        <div class="h-16 flex items-center mb-4">
+                            <img src="https://about.misabilirridlo.sch.id/logo-google-edu.png" 
+                                 alt="Logo Google Workspace" 
+                                 class="h-10 w-auto object-contain">
+                        </div>
+                        <h3 class="text-lg font-bold text-darkBlue mb-2">Google Workspace</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Google sebagai perangkat pendukung belajar mengajar.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-6 right-6 w-8 h-8 bg-slate-50 group-hover:bg-brand rounded-full flex items-center justify-center text-slate-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </a>
+
+                <!-- Kartu 2: Canva Pendidikan (Gambar) -->
+                <a href="https://canva.misabilirridlo.sch.id" class="group bg-white rounded-xl shadow-sm border border-slate-100 p-6 relative flex flex-col justify-between h-64 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <!-- Area Logo: Ganti src dengan link gambar Canva Anda -->
+                        <div class="h-16 flex items-center mb-4">
+                            <img src="https://about.misabilirridlo.sch.id/logo-canva.png" 
+                                 alt="Logo Canva Pendidikan" 
+                                 class="h-10 w-auto object-contain">
+                        </div>
+                        <h3 class="text-lg font-bold text-darkBlue mb-2">Canva Pendidikan</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Desain kreatif tanpa batas untuk belajar mengajar.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-6 right-6 w-8 h-8 bg-slate-50 group-hover:bg-brand rounded-full flex items-center justify-center text-slate-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </a>
+
+                <!-- Kartu 3: Portal Guru -->
+                <a href="https://guru.misabilirridlo.sch.id" class="group bg-white rounded-xl shadow-sm border border-slate-100 p-6 relative flex flex-col justify-between h-64 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 text-brand group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-chalkboard-user text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-darkBlue mb-2">Portal Guru</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Direktori resmi tenaga pendidik MIS SABILIRRIDLO.
+                        </p>
+                    </div>
+                    <!-- Ikon Panah Kecil -->
+                    <div class="absolute bottom-6 right-6 w-8 h-8 bg-slate-50 group-hover:bg-brand rounded-full flex items-center justify-center text-slate-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </a>
+
+                <!-- Kartu 4: PPDB Online -->
+                <a href="https://ppdb.misabilirridlo.sch.id" class="group bg-white rounded-xl shadow-sm border border-slate-100 p-6 relative flex flex-col justify-between h-64 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-user-plus text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-darkBlue mb-2">PPDB Online</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Sistem pendaftaran siswa baru terintegrasi.
+                        </p>
+                    </div>
+                    <!-- Ikon Panah Kecil -->
+                    <div class="absolute bottom-6 right-6 w-8 h-8 bg-slate-50 group-hover:bg-brand rounded-full flex items-center justify-center text-slate-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
        
     <!-- STUDY PROGRAMS SECTION -->
     <!-- Card layout for featured academic programs -->
@@ -226,7 +395,7 @@ Thank you for using this template!
                   <h5 class="card-title text-capitalize">tahfidz</h5>
                   <p class="card-text text-capitalize">mendidik siswa dalam memahami dan menghafal Al-Qur'an dengan baik</p>
                   <a href="#" class="icon-link gap-1 icon-link-hover stretched-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
-                    -
+                    baca selengkapnya
                     <i class="bi bi-chevron-right"></i>
                   </a>
                 </div>
@@ -237,7 +406,7 @@ Thank you for using this template!
             <!-- Program DKV -->
             <div class="col-md-4 pt-2">
               <div data-sal="slide-up" class="card h-100">
-                <img src="assets/img/program-inggris.webp" loading="lazy" alt="jurusan-dkv" class="card-img-top img-jurusan" >
+                <img src="https://misabilirridlo.sch.id/assets/img/program-inggris.webp" loading="lazy" alt="jurusan-dkv" class="card-img-top img-jurusan" >
                 <div class="card-body">
                   <h5 class="card-title text-capitalize">bahasa inggris</h5>
                   <p class="card-text text-capitalize">Melahirkan siswa yang terampil berbahasa Inggris secara aktif, kreatif, dan berwawasan global.</p>
@@ -313,6 +482,11 @@ Thank you for using this template!
                       <a class="nav-link text-white link-footer" href="mailto:mi.sabilirridlo@gmail.com">
                         <i class="bi bi-envelope me-2"></i>mi.sabilirridlo@gmail.com
                       </a>
+                       </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white link-footer" href="mailto:mi.sabilirridlo@gmail.com">
+                        <i class="bi bi-envelope me-2"></i>contact@misabilirridlo.sch.id
+                      </a>
                     </li>
                 </ul>
             </div>
@@ -366,8 +540,6 @@ Thank you for using this template!
   </body>
 
 </html>
-
-
 
 
 
