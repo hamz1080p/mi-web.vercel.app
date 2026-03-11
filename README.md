@@ -1,6 +1,5 @@
 # mi-web.vercel.app
-->this is open source code, from my school
-->You can use this source code and edit it as you wish, we do not prohibit that!
+->this is open source code, from my school, You can use this source code and edit it as you wish, we do not prohibit that!
 
 ##Credit
 - **Thanks To**:[Miawwh](https://github.com/Miawwh) for the [source code](https://github.com/Miawwh/smk-school-website-template) of this school, i am re-sharing the source code
