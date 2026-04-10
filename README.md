@@ -1,4 +1,4 @@
-# mi-web.vercel.app
+# sabilirridlo school website
 ->this is open source code, from my school, You can use this source code and edit it as you wish, we do not prohibit that!
 
 ---
